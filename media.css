@@ -1,0 +1,279 @@
+@media screen and (max-width: 480px) {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+}
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'Quicksand', sans-serif;
+    --font4: 'Raleway', sans-serif;
+    --font5: 'Playfair Display', serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hero nav {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    z-index: 99;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero nav ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero nav a.register {
+    background: beige;
+    color: black;
+    padding: 1rem 4rem;
+    margin-left: 0rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .left {
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.hero .left .leftInner {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero .left .leftInner h1 {
+    text-align: center;
+    height: 50%;
+    color: beige;
+    font-size: 7rem;
+    font-family: var(--font5);
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.hero .left .leftInner h2 {
+    text-align: center;
+    height: 10%;
+    color: beige;
+    letter-spacing: 1px;
+}
+
+.hero .left .leftInner .btn {
+    height: 30%;
+    width: 100%;
+}
+
+.hero .left .leftInner .btn a {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 30px;
+    color: black;
+    background: beige;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .left .leftInner .btn a:hover {
+    background: black;
+    color: beige;
+}
+
+.hero .right {
+    height: 40%;
+    width: 100%;
+    background: url(images/img2.jpg);
+    background-position: center;
+    background-size: 150%;
+}
+
+section.sec1 {
+    background-size: 350%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.sec1 .sec1Inner {
+    height: 80%;
+    width: 80%;
+}
+
+.sec1 .sec1Inner h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sec1 .sec1Inner h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    font-family: var(--font5);
+    font-weight: 500;
+    line-height: 65px;
+    align-items: center;
+}
+.sec1 .sec1Inner h3 {
+    width: 100%;
+    font-size: 1rem;
+}
+.sec1 .sec1Inner .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sec1 .sec1Inner .btns a {
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    background: black;
+    color: beige;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sec2 h1 {
+    width: 100%;
+    font-size: 6rem;
+    line-height: 65px;
+}
+
+.sec2 ul {
+    height: 700px;
+    width: 400px;
+    flex-direction: column;
+}
+
+.sec2 ul li {
+    height: 33.333333%;
+    width: 100%;
+}
+
+.sec2 ul li .top {
+    height: 80%;
+}
+
+.sec2 ul li .top img:hover {
+    transform: translateY(0px);
+}
+
+.sec2 ul li .bottom {
+    height: 20%;
+}
+
+.sec2 ul li .bottom h2 {
+    border-top: none;
+    padding: 0.5rem;
+}
+
+section.sec3 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec3 h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-family: var(--font5);
+    font-weight: 500;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec3 .carousal {
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.sec3 .dotsContainer {
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0%;
+    background: black;
+}
+
+.sec3 .dotsContainer ul {
+    list-style: none;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.sec3 .dotsContainer ul li {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 .dotsContainer ul li span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: beige;
+    cursor: pointer;
+}
+
+.sec3 .dotsContainer ul li span:hover {
+    background: rgba(245, 245, 220, 0.575);
+}
+
+footer {
+    height: 10vh;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+}
+}

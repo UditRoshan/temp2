@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+}
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'Quicksand', sans-serif;
+    --font4: 'Raleway', sans-serif;
+    --font5: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    cursor: default;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.hero nav {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    z-index: 99;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero nav ul {
+    height: 100%;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero nav ul li {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero nav ul li a {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero nav ul li a:hover {
+    color: rgb(138, 138, 138);
+}
+
+.hero nav a.register {
+    background: beige;
+    color: black;
+    padding: 1.4rem 5rem;
+    margin-left: 17.5rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero nav a.register:hover {
+    background: black;
+    color: beige;
+}
+
+.hero .left {
+    position: relative;
+}
+
+.hero .left .leftInner {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.hero .left .leftInner h1 {
+    height: 50%;
+    color: beige;
+    font-size: 13rem;
+    font-family: var(--font5);
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.hero .left .leftInner h2 {
+    height: 10%;
+    color: beige;
+    letter-spacing: 1px;
+}
+
+.hero .left .leftInner .btn {
+    height: 30%;
+    width: 50%;
+}
+
+.hero .left .leftInner .btn a {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 30px;
+    color: black;
+    background: beige;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .left .leftInner .btn a:hover {
+    background: black;
+    color: beige;
+}
+
+.hero .right {
+    background: url(images/img2.jpg);
+    background-position: center;
+    background-size: 150%;
+}
+
+section.sec1 {
+    height: 100vh;
+    width: 100vw;
+    background: url(images/img6.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.sec1::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.616);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.sec1 .sec1Inner {
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+.sec1 .sec1Inner h1 {
+    font-size: 3rem;
+}
+.sec1 .sec1Inner h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 13rem;
+    font-family: var(--font5);
+    font-weight: 500;
+    line-height: 120px;
+    align-items: center;
+}
+.sec1 .sec1Inner h3 {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.sec1 .sec1Inner .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sec1 .sec1Inner .btns a {
+    padding: 1.5rem 5rem;
+    border-radius: 30px;
+    background: black;
+    color: beige;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec1 .sec1Inner .btns a:hover {
+    background: beige;
+    color: black;
+}
+
+section.sec2 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.sec2 h1 {
+    width: 70%;
+    text-align: center;
+    font-size: 13rem;
+    font-family: var(--font5);
+    font-weight: 500;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec2 ul {
+    height: 600px;
+    width: 1600px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.sec2 ul li {
+    height: 100%;
+    width: 33.3333333%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec2 ul li .top {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 ul li .top img {
+    height: 90%;
+    width: 95%;
+    object-fit: cover;
+    border-bottom: 5px solid black;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec2 ul li .top img:hover {
+    transform: translateY(-30px);
+}
+
+.sec2 ul li .bottom {
+    height: 30%;
+    width: 100%;
+}
+
+.sec2 ul li .bottom h2 {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2rem;
+}
+
+
+section.sec3 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec3 h1 {
+    width: 70%;
+    text-align: center;
+    font-size: 13rem;
+    font-family: var(--font5);
+    font-weight: 500;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec3 .carousal {
+    height: 600px;
+    width: 1600px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.sec3 .carousal .card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec3 .carousal .card .image {
+    height: 50%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.sec3 .carousal .card1 .image {
+    background: url(images/img1.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec3 .carousal .card2 .image {
+    background: url(images/img2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec3 .carousal .card3 .image {
+    background: url(images/img3.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec3 .carousal .card4 .image {
+    background: url(images/img4.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec3 .carousal .card h2 {
+    width: 50%;
+    text-align: center;
+    font-size: 3rem;
+}
+.sec3 .carousal .card p {
+    width: 50%;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.sec3 .carousal .card a {
+    width: 20%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 4rem;
+    border-radius: 30px;
+    background: black;
+    color: beige;
+}
+
+.sec3 .carousal .card1 {
+    top: 0%;
+}
+
+.sec3 .dotsContainer {
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0%;
+    background: black;
+}
+
+.sec3 .dotsContainer ul {
+    list-style: none;
+    height: 100%;
+    width: 10%;
+    margin: auto;
+    display: flex;
+}
+
+.sec3 .dotsContainer ul li {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 .dotsContainer ul li span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: beige;
+    cursor: pointer;
+}
+
+.sec3 .dotsContainer ul li span:hover {
+    background: rgba(245, 245, 220, 0.575);
+}
+
+footer {
+    height: 15vh;
+    width: 100vw;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
